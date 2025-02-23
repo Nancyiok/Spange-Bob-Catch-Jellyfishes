@@ -9,7 +9,7 @@ function howToPLay() {
     title.innerHTML = '<div class="how-to-play__alignment">Jellyfish Hunt with SpongeBob! <img src="./img-for-game/spangebobOnJellyFisg.jpg" alt="SpangeBob" class="how-to-play__spangeBobOnJellyFish"></div>';
     const description = document.createElement("div");
     description.classList.add("how-to-play__description");
-    description.innerHTML = ` <div class="how-to-play__alignment">SpongeBob is on a mission to catch as many pink jellyfish as possible!<img src="../img-for-game/jellyfish-first-move.svg" alt="jellyfish-pink" class="how-to-play__jellyfish"></div>
+    description.innerHTML = ` <div class="how-to-play__alignment">SpongeBob is on a mission to catch as many pink jellyfish as possible!<img src="./img-for-game/jellyfish-first-move.svg" alt="jellyfish-pink" class="how-to-play__jellyfish"></div>
     <div class="how-to-play__alignment">But watch out—purple jellyfish are dangerous! <img src="./img-for-game/jellyfishBad1.svg" alt="jellyfish-purple" class="how-to-play__jellyfish"></div>
     <span class="how-to-play__hightlight">How to Play?</span><br>
     <ul>
