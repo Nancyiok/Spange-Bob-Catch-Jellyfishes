@@ -1,0 +1,56 @@
+.game-over {
+    height: 100vh;
+    background: url("../img-for-game/backgroundGameEnd.jpg") no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-over__title{
+    font-size: 50px;
+    background-color: var(--blue-background-color);
+    color: var(--white-text-color);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.game-over__restart-button{
+    background-color: var(--pink-background-color);
+    color: var(--white-button-color);
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 1;
+    transition: all 0.3s;
+}
+.game-over__restart-button:hover{
+    background-color: var(--pink-hover-background-color);
+    border-radius: 5px;
+    font-size: 20px;
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+.game-over__background-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.game-over__score{
+    color: var(--white-text-color);
+    font-size: 30px;
+    z-index: 1;
+}
+.game-over__score span{
+    color: var(--pink-text-color);
+    font-size: 30px;
+    z-index: 1;
+}

@@ -1,0 +1,101 @@
+.jellyfish {
+    z-index: 1;
+    width: 120px;
+    height: 160px;
+    cursor: pointer;
+}
+
+.jellyfish img {
+    position: absolute;
+    margin: 5px;
+}
+
+.jellyfish img:first-child {
+    animation: jellyfishAnimation 1s infinite alternate ease-in-out;
+}
+
+@keyframes jellyfishAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.jellyfish img:last-child {
+    animation: jellyfishAnimation 1s infinite alternate-reverse ease-in-out;
+    width: 100px;
+    height: 120px;
+}
+
+
+.counter-container {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: var(--white-background-color);
+}
+.counter-container p {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+
+.health-container {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.health-container img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+}
+
+.spangeBob {
+    position: absolute;
+    z-index: 2;
+}
+
+.spangeBob img {
+    width: 200px;
+    height: 300px;
+    animation: spangeBobAnimation 5s linear infinite;
+}
+
+
+@keyframes spangeBobAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translate(calc(100vw - 300px), -30px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.red-background {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: var(--damage-background-color);
+    pointer-events: none;
+}
+
+.counter-container p span{
+    color: var(--pink-text-color);
+}

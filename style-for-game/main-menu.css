@@ -1,0 +1,57 @@
+@keyframes moveBackground {
+    0% {
+        background-position: center top;
+    }
+
+    50% {
+        background-position: center bottom;
+    }
+
+    100% {
+        background-position: center top;
+    }
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    background: url("../img-for-game/main-menu-background.svg") no-repeat center/cover;
+    animation: moveBackground 5s infinite ease-in-out;
+}
+
+.main-menu__title {
+    background-color: var(--pink-background-color);
+    padding: 25px;
+    border-radius: 10px;
+    color: var(--white-text-color);
+}
+
+.main-menu__start-button {
+    background-color: var(--white-button-color);
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+@media (min-width: 900px) {
+    .main-menu__start-button:hover {
+        background-color: var(--white-button-hover-color);
+        transform: scale(1.1);
+    }
+
+}
+
+.music-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}

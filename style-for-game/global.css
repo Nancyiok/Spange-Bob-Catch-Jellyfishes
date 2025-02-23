@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pink-background-color: rgba(236, 137, 168, 87);
+    --pink-text-color: rgb(236,137,168);
+    --pink-dark-color: rgb(236,137,168);
+    --pink-hover-background-color: rgb(206, 110, 140);
+    --white-background-color: #fff;
+    --white-text-color: #fff;
+    --white-button-color: #fff;
+    --white-button-hover-color: #f0f0f0;
+    --blue-background-color: #30A3D9;
+    --purple-background-color: #6358A4;
+    --damage-background-color: rgba(223, 56,70, 0.4);
+    --black-text-color: #000;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+button {
+    font-size: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    padding: 10px 20px;
+    font-family: Montserrat,
+        sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    min-width: 320px;
+}
+
+input {
+    font-family: Montserrat,
+        sans-serif;
+}
