@@ -1,4 +1,4 @@
-const musicData = ["../music/music-for-menu.mp3", "../music/music-for-game.mp3", "../music/game-over.m4a", "../music/damage-sound.m4a"];
+const musicData = ["./music/music-for-menu.mp3", "./music/music-for-game.mp3", "./music/game-over.m4a", "./music/damage-sound.m4a"];
 export let audio = null;  
 
 function replaceSong(newSongUrl) {

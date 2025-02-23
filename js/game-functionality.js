@@ -67,12 +67,12 @@ function createJellyFishes(jellyfishes, jellyfishContainer, bad) {
         costume1.style.pointerEvents = "none";
         const costume2 = document.createElement("img");
         if (bad) {
-            costume2.src = "./../img-for-game/jellyfishBad2.svg";
+            costume2.src = "./img-for-game/jellyfishBad2.svg";
             costume2.alt = "Костюм для поганої медузи 2";
         }
 
         else {
-            costume2.src = "./../img-for-game/jellyfish-second-move.svg";
+            costume2.src = "./img-for-game/jellyfish-second-move.svg";
             costume2.alt = "Костюм для медузи 2";
         }
 
@@ -147,7 +147,7 @@ function health() {
 
     for (let i = 0; i < BadJellyfish.health; i++) {
         const health = document.createElement("img");
-        health.src = "../img-for-game/heart.png";
+        health.src = "./img-for-game/heart.png";
         health.alt = "Heart";
         healthContainer.appendChild(health);
     }
