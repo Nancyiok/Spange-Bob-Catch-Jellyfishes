@@ -57,22 +57,22 @@ function createJellyFishes(jellyfishes, jellyfishContainer, bad) {
         jellyfishDiv.style.left = `${jellyfish.x}px`;
         const costume1 = document.createElement("img");
         if (bad) {
-            costume1.src = "../img-for-game/jellyfishBad1.svg";
+            costume1.src = "./../img-for-game/jellyfishBad1.svg";
             costume1.alt = "Костюм для поганої медузи 1";
         } else {
-            costume1.src = "../img-for-game/jellyfish-first-move.svg";
+            costume1.src = "./../img-for-game/jellyfish-first-move.svg";
             costume1.alt = "Костюм для медузи 1";
         }
         jellyfishDiv.appendChild(costume1);
         costume1.style.pointerEvents = "none";
         const costume2 = document.createElement("img");
         if (bad) {
-            costume2.src = "../img-for-game/jellyfishBad2.svg";
+            costume2.src = "./../img-for-game/jellyfishBad2.svg";
             costume2.alt = "Костюм для поганої медузи 2";
         }
 
         else {
-            costume2.src = "../img-for-game/jellyfish-second-move.svg";
+            costume2.src = "./../img-for-game/jellyfish-second-move.svg";
             costume2.alt = "Костюм для медузи 2";
         }
 
