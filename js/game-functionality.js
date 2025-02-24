@@ -125,26 +125,31 @@ function damage() {
         }, 1000);
     }
     else {
-        let counterContainer = spangeBobDiv.querySelector(".counter-container p");
-        counterContainer.style.display = "none";
         return;
     }
 }
 
 function createCounter() {
-    if (spangeBobDiv.querySelector(".counter-container")) {
-        document.querySelector(".counter-container p").innerHTML = `Your score: <span>${JellyFish.count}</span>`;
-        return;
+    if (BadJellyfish.health > 0) {
+        if (spangeBobDiv.querySelector(".counter-container")) {
+            document.querySelector(".counter-container p").innerHTML = `Your score: <span>${JellyFish.count}</span>`;
+            return;
+        }
+        else {
+            const counterContainer = document.createElement("div");
+            counterContainer.classList.add("counter-container");
+            const counter = document.createElement("p");
+            counter.innerHTML = `Your score: <span>${JellyFish.count}</span>`;
+            counterContainer.appendChild(counter);
+            spangeBobDiv.appendChild(counterContainer);
+        }
     }
     else {
-        const counterContainer = document.createElement("div");
-        counterContainer.classList.add("counter-container");
-        const counter = document.createElement("p");
-        counter.innerHTML = `Your score: <span>${JellyFish.count}</span>`;
-        counterContainer.appendChild(counter);
-        spangeBobDiv.appendChild(counterContainer);
+       return;
     }
+
 }
+
 function health() {
     let healthContainer = spangeBobDiv.querySelector(".health-container");
     if (healthContainer) {

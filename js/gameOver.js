@@ -2,8 +2,7 @@ import spangeBobDiv from "./index.js";
 import JellyFish from "./jellyfish.js";
 export default function GameOver() {
     const newRecord = checkProgress();
-    console.log(newRecord);
-    spangeBobDiv.replaceChildren();
+    [...spangeBobDiv.children].forEach(el=>el.remove());
     const gameOverContainer = document.createElement("div");
     gameOverContainer.classList.add("game-over");
     const title = document.createElement("h3");
@@ -35,8 +34,8 @@ function checkProgress() {
         localStorage.setItem("score", JSON.stringify(scoreTotal));
         return true;
     }
-   
-        return false;
+
+    return false;
 }
 
 export { checkProgress };

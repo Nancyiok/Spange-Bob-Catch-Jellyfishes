@@ -16,7 +16,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: var(--black-text-color);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .how-to-play__image {
@@ -49,6 +49,10 @@
 @media (min-width: 700px) {
     .how-to-play__title {
         font-size: 30px;
+    }
+
+    .how-to-play__description {
+        font-size: 20px;
     }
 }
 
