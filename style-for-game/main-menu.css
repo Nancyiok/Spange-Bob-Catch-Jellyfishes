@@ -28,6 +28,7 @@
     padding: 25px;
     border-radius: 10px;
     color: var(--white-text-color);
+    text-align: center;
 }
 
 .main-menu__start-button {
@@ -39,7 +40,7 @@
     color: var(--black-text-color);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1000px) {
     .main-menu__start-button:hover {
         background-color: var(--white-button-hover-color);
         transform: scale(1.1);
@@ -56,3 +57,4 @@
     border-radius: 50%;
     cursor: pointer;
 }
+

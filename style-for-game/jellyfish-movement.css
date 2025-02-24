@@ -33,12 +33,25 @@
 
 .counter-container {
     position: absolute;
-    top: 0;
-    right: 60px;
+    bottom: 0;
+    right: 0px;
     transform: translateX(-50%);
     padding: 10px;
     background-color: var(--white-background-color);
+    height: 50px;
 }
+
+@media (min-width: 800px) {
+    .counter-container {
+        position: absolute;
+        top: 0;
+        right: 60px;
+        transform: translateX(-50%);
+        padding: 10px;
+        background-color: var(--white-background-color);
+    }
+}
+
 .counter-container p {
     font-weight: 500;
     font-size: 25px;

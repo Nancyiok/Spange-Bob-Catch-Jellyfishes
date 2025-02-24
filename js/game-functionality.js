@@ -2,12 +2,22 @@ import JellyFish from "./jellyfish.js";
 import BadJellyfish from "./badJellyfish.js";
 import SpangeBob from "./spangeBob.js";
 import spangeBobDiv from "./index.js";
+
 export default function makeJellyFishMove() {
-    const jellyfishes = JellyFish.createJellyFish(20, 5);
+    const width = window.innerWidth;
+    let jellyfishes = "";
+    let badJellyfishes = "";
+    if (width > 600) {
+        jellyfishes = JellyFish.createJellyFish(15, 5);
+        badJellyfishes = BadJellyfish.createJellyFish(5, 15)
+    }
+    else {
+        jellyfishes = JellyFish.createJellyFish(4, 5);
+        badJellyfishes = BadJellyfish.createJellyFish(2, 15)
+    }
     const jellyfishElements = [];
     createJellyFishes(jellyfishes, jellyfishElements, false);
     changeJellyFishPosition(jellyfishes, jellyfishElements, false);
-    let badJellyfishes = BadJellyfish.createJellyFish(4, 15);
     const badJellyfishElements = [];
     createJellyFishes(badJellyfishes, badJellyfishElements, true);
     changeJellyFishPosition(badJellyfishes, badJellyfishElements, true);
@@ -58,22 +68,22 @@ function createJellyFishes(jellyfishes, jellyfishContainer, bad) {
         const costume1 = document.createElement("img");
         if (bad) {
             costume1.src = "./img-for-game/jellyfishBad1.svg";
-            costume1.alt = "Костюм для поганої медузи 1";
+            costume1.alt = "Costume for bad jellyfish 1";
         } else {
             costume1.src = "./img-for-game/jellyfish-first-move.svg";
-            costume1.alt = "Костюм для медузи 1";
+            costume1.alt = "Costume for jellyfish 1";
         }
         jellyfishDiv.appendChild(costume1);
         costume1.style.pointerEvents = "none";
         const costume2 = document.createElement("img");
         if (bad) {
             costume2.src = "./img-for-game/jellyfishBad2.svg";
-            costume2.alt = "Костюм для поганої медузи 2";
+            costume2.alt = "Costume for bad jellyfish 2";
         }
 
         else {
             costume2.src = "./img-for-game/jellyfish-second-move.svg";
-            costume2.alt = "Костюм для медузи 2";
+            costume2.alt = "Costume for jellyfish 2";
         }
 
         costume2.style.pointerEvents = "none";
@@ -130,7 +140,7 @@ function createCounter() {
         const counterContainer = document.createElement("div");
         counterContainer.classList.add("counter-container");
         const counter = document.createElement("p");
-        counter.innerHTML = `Your score: <span>${JellyFish.count}</span>`; 
+        counter.innerHTML = `Your score: <span>${JellyFish.count}</span>`;
         counterContainer.appendChild(counter);
         spangeBobDiv.appendChild(counterContainer);
     }

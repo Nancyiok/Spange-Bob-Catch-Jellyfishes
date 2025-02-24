@@ -1,4 +1,4 @@
-.how-to-play{
+.how-to-play {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,7 +9,7 @@
     text-align: center;
 }
 
-.how-to-play__description{
+.how-to-play__description {
     background-color: var(--white-background-color);
     padding: 20px;
     border-radius: 5px;
@@ -19,19 +19,20 @@
     font-size: 20px;
 }
 
-.how-to-play__image{
+.how-to-play__image {
     max-width: 150px;
 }
 
-.how-to-play__jellyfish, .how-to-play__heart{
+.how-to-play__jellyfish,
+.how-to-play__heart {
     width: 60px;
 }
 
-.how-to-play__spangeBobOnJellyFish{
+.how-to-play__spangeBobOnJellyFish {
     width: 100px;
 }
 
-.how-to-play__alignment{
+.how-to-play__alignment {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,17 +40,24 @@
     gap: 5px;
 }
 
-.how-to-play__title{
+.how-to-play__title {
     color: var(--white-text-color);
     font-weight: 600;
+    font-size: 20px;
 }
 
-.how-to-play__hightlight{
+@media (min-width: 700px) {
+    .how-to-play__title {
+        font-size: 30px;
+    }
+}
+
+.how-to-play__hightlight {
     color: var(--pink-dark-color);
     font-weight: 600;
 }
 
-.how-to-play__button{
+.how-to-play__button {
     background-color: var(--pink-background-color);
     color: var(--white-button-color);
     border-radius: 5px;
@@ -60,7 +68,10 @@
     transition: all 0.3s;
 }
 
-.how-to-play__button:hover{
-    background-color: var(--pink-hover-background-color);
-    transform: scale(1.1);
+
+@media (min-width: 1000px) {
+    .how-to-play__button:hover {
+        background-color: var(--pink-hover-background-color);
+        transform: scale(1.1);
+    }
 }

@@ -7,35 +7,58 @@
     flex-direction: column;
 }
 
-.game-over__title{
-    font-size: 50px;
+.game-over__title {
+    font-size: 20px;
     background-color: var(--blue-background-color);
     color: var(--white-text-color);
     padding: 10px 20px;
     margin-bottom: 20px;
     z-index: 1;
     border-radius: 5px;
+    text-align: center;
 }
 
-.game-over__restart-button{
+@media(min-width: 700px) {
+    .game-over__title {
+        font-size: 50px;
+    }
+}
+
+.game-over__restart-button {
     background-color: var(--pink-background-color);
     color: var(--white-button-color);
     margin-top: 20px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
     z-index: 1;
     transition: all 0.3s;
 }
-.game-over__restart-button:hover{
-    background-color: var(--pink-hover-background-color);
-    border-radius: 5px;
-    font-size: 20px;
-    z-index: 1;
-    transform: scale(1.1);
+
+@media(min-width: 700px) {
+
+    .game-over__restart-button {
+        font-size: 20px;
+    }
+
 }
 
-.game-over__background-hover{
+@media(min-width: 1000px) {
+
+    .game-over__restart-button {
+        font-size: 20px;
+    }
+
+    .game-over__restart-button:hover {
+        background-color: var(--pink-hover-background-color);
+        border-radius: 5px;
+        font-size: 20px;
+        z-index: 1;
+        transform: scale(1.1);
+    }
+}
+
+.game-over__background-hover {
     position: absolute;
     top: 0;
     left: 0;
@@ -44,12 +67,17 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.game-over__score{
+
+
+
+.game-over__score {
     color: var(--white-text-color);
     font-size: 30px;
     z-index: 1;
+    text-align: center;
 }
-.game-over__score span{
+
+.game-over__score span {
     color: var(--pink-text-color);
     font-size: 30px;
     z-index: 1;
