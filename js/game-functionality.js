@@ -25,7 +25,6 @@ export default function makeJellyFishMove() {
 }
 
 function changeJellyFishPosition(jellyfishes, jellyfishElements, bad) {
-
     jellyfishElements.forEach((jellyfishElement, index) => {
         if (bad) {
             catchBadJellyFishes(jellyfishElement);
@@ -90,8 +89,6 @@ function createJellyFishes(jellyfishes, jellyfishContainer, bad) {
         jellyfishDiv.appendChild(costume2);
         spangeBobDiv.appendChild(jellyfishDiv);
         jellyfishContainer.push(jellyfishDiv);
-        return jellyfishes;
-
     });
 }
 

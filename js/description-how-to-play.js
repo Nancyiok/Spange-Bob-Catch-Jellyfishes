@@ -18,7 +18,6 @@ function howToPLay() {
     <li>You have 3 lives—be careful not to lose them all!</li>
     </ul>
     Can you help SpongeBob become the ultimate jellyfish catcher? <br> <span class="how-to-play__hightlight">Let’s find out!</span>`;
-    const image = document.createElement("img");
     const button = document.createElement("button");
     button.classList.add("how-to-play__button");
     button.innerText = "Catch Jellyfish!";
