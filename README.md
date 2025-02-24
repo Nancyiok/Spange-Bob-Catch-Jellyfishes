@@ -1,5 +1,4 @@
-# Jellyfish Hunt with SpongeBob! 🌊🧪
-
+# Jellyfish Hunt with SpongeBob! 🌊🪼
 Welcome to **Jellyfish Hunt with SpongeBob!**, an exciting browser game where you help SpongeBob catch pink jellyfish while avoiding the dangerous purple ones.
 
 ## About the Game
