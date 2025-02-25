@@ -20,7 +20,7 @@ SpongeBob loves jellyfishing, and now it's your turn to join the adventure! Test
    ```bash
    git clone https://github.com/Nancyiok/Spange-Bob-catch-jellyfishes.git
    ```
-2. Open `https://nancyiok.github.io/Spange-Bob-catch-jellyfishes/` in your browser and enjoy the game!
+2. Open `https://nancyiok.github.io/Spange-Bob-Catch-Jellyfishes/` in your browser and enjoy the game!
 
 ## Credits
 Developed with love for SpongeBob fans! 🌟
