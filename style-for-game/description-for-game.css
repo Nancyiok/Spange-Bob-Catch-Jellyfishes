@@ -17,6 +17,7 @@
     color: var(--black-text-color);
     font-weight: 500;
     font-size: 15px;
+    margin: 0 30px;
 }
 
 .how-to-play__image {
