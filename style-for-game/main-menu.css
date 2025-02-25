@@ -29,6 +29,7 @@
     border-radius: 10px;
     color: var(--white-text-color);
     text-align: center;
+    margin: 0 10px;
 }
 
 .main-menu__start-button {
