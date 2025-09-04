@@ -1,0 +1,11 @@
+{
+  "name": "spange-bob-catch-jellyfishes",
+  "version": "1.0.0",
+  "description": "Welcome to **Jellyfish Hunt with SpongeBob!**, an exciting browser game where you help SpongeBob catch pink jellyfish while avoiding the dangerous purple ones.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
